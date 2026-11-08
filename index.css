@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:#07111F;color:#fff;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0}
+.card{background:#111c2e;border:1px solid rgba(255,255,255,.08);border-radius:16px;transition:.3s}
+.card:hover{transform:translateY(-4px);border-color:#16A34A}
+.glass{background:rgba(255,255,255,.07);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.12)}
+.btn{background:#16A34A;padding:.7rem 1.4rem;border-radius:999px;font-weight:700;transition:.2s;display:inline-block}
+.btn:hover{background:#15803d;transform:scale(1.04)}
+.btn2{border:2px solid #FACC15;color:#FACC15;padding:.7rem 1.4rem;border-radius:999px;font-weight:700;display:inline-block}
+.btn2:hover{background:#FACC15;color:#07111F}
+.inp{width:100%;background:#0b1829;border:1px solid #26354d;border-radius:10px;padding:.65rem .8rem;color:#fff}
+.inp:focus{outline:2px solid #16A34A}
+@keyframes up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.up{animation:up .8s both}
+.demo{font-size:10px;background:#FACC15;color:#07111F;border-radius:6px;padding:1px 6px;font-weight:700}
+#loader{position:fixed;inset:0;background:#07111F;display:flex;align-items:center;justify-content:center;font-size:56px;z-index:99;animation:fade 1s 1.2s forwards}
+@keyframes fade{to{opacity:0;visibility:hidden}}
+.spin{animation:s 1s linear infinite}@keyframes s{to{transform:rotate(360deg)}}
